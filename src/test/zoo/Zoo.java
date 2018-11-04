@@ -12,10 +12,20 @@ package test.zoo;
 public class Zoo {
     
     public static void main(String args[]){
-        Animal animal1 = new Animal(12,"M",23);
+        Animal animal1 = new Bird(12,"M",23);
         animal1.eat();
+        animal1.move();
         
-        Chicken chick1 = new Chicken(1,"M",2);
-        chick1.fly();
-    }
+        Animal chick1 = new Fish(1,"M",2);
+        chick1.move();
+     
+       moveAnimal(animal1);
+       moveAnimal(chick1);
+       
+       Flyable fly = new Sparrow(12,"w",3);
+    }  
+        public static void moveAnimal(Animal animal){
+            animal.move();
+        }
+    
 }

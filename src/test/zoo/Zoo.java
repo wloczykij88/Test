@@ -17,5 +17,8 @@ public class Zoo {
         
         Chicken chick1 = new Chicken(1,"M",2);
         chick1.fly();
+        
+        Animal sparrow1 = new Sparrow(1,"m", 2);
+        sparrow1.move();
     }
 }
